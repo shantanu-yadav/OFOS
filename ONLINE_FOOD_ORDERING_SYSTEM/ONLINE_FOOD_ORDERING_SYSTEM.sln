@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOS.Model", "OFOS.Model\OFOS.Model.csproj", "{ACEF0BAF-18FC-4353-831B-CA22E5EC5023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOS.DAL", "OFOS.DAL\OFOS.DAL.csproj", "{6F4D322B-60E9-41B2-8EF1-C5373D9D96F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOS.UI", "OFOS.UI\OFOS.UI.csproj", "{7E03BBF9-26DA-4492-91FC-06F6105FA8BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACEF0BAF-18FC-4353-831B-CA22E5EC5023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACEF0BAF-18FC-4353-831B-CA22E5EC5023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACEF0BAF-18FC-4353-831B-CA22E5EC5023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACEF0BAF-18FC-4353-831B-CA22E5EC5023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4D322B-60E9-41B2-8EF1-C5373D9D96F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4D322B-60E9-41B2-8EF1-C5373D9D96F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4D322B-60E9-41B2-8EF1-C5373D9D96F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4D322B-60E9-41B2-8EF1-C5373D9D96F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E03BBF9-26DA-4492-91FC-06F6105FA8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E03BBF9-26DA-4492-91FC-06F6105FA8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E03BBF9-26DA-4492-91FC-06F6105FA8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E03BBF9-26DA-4492-91FC-06F6105FA8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37916325-299D-496C-A28D-81A63837E98E}
+	EndGlobalSection
+EndGlobal
