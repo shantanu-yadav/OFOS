@@ -121,11 +121,11 @@ namespace OFOS.DAL
             return false;
         }
 
-        public bool UpdateOrder(int OderId, int FoodId, string orderStatus, string shippingAddress, DateTime expectedTimeofDelivery,int quantity,decimal totalAmount)
+        public bool UpdateOrder(int OrderId, int FoodId, string orderStatus, string shippingAddress, DateTime expectedTimeofDelivery,int quantity,decimal totalAmount)
         {
             try
             {
-                Qry = "update OrderDetails set FoodId=@FoodId,Orderstatus=@orderStatus,ShippingAddress=@shippingAddress,ExpectedTimeOfDelivery=@expectedTimeofDelivery,Quantity=@quantity,TotalAmount=@totalAmount where OderID = OderID";
+                Qry = "update OrderDetails set FoodId=@FoodId,Orderstatus=@orderStatus,ShippingAddress=@shippingAddress,ExpectedTimeOfDelivery=@expectedTimeofDelivery,Quantity=@quantity,TotalAmount=@totalAmount where OderID =" + OrderId;
                 cmd = new SqlCommand(Qry, con);
                 cmd.Parameters.AddWithValue("@FoodId", FoodId);
                 cmd.Parameters.AddWithValue("@OrderStatus", orderStatus);

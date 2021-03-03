@@ -14,6 +14,7 @@ namespace OFOS.UI
         { bool exit = true;
             do
             {
+                Console.WriteLine("**********************************************Customer Console***********************************************");
                 Console.WriteLine("1.New User(Register)\n2.Login");
                 int choice = int.Parse(Console.ReadLine());
                 CustomerDAO customer = new CustomerDAO();
@@ -152,14 +153,18 @@ namespace OFOS.UI
                                                     {
                                                         DataTable dt = order.GetOrderByCustomerId(customerId);
 
-                                                        foreach (DataRow or in dt.Rows)
-                                                        {
-                                                            int foodId = (int)or["FoodID"];
-                                                            DataRow r = food.GetFoodById(foodId);
+                                                        Console.WriteLine(dt);
+                                                        
+                                                            foreach (DataRow or in dt.Rows)
+                                                            {
+                                                                int foodId = (int)or["FoodID"];
+                                                                DataRow r = food.GetFoodById(foodId);
 
-                                                            Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
+                                                                Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
 
-                                                        }
+                                                            }
+                                                        
+                                                        
                                                     }
                                                     else
                                                     {
@@ -193,11 +198,11 @@ namespace OFOS.UI
                                                 Console.WriteLine("Enter Order ID:");
                                                 int UpdateOrderId = int.Parse(Console.ReadLine());
                                                 Console.WriteLine("Enter New Food Id");
-                                                int FoodId = int.Parse(Console.ReadLine());
+                                                int UpdatedFoodId = int.Parse(Console.ReadLine());
                                                 Console.WriteLine("Enter Quantity");
                                                 int Quantity = int.Parse(Console.ReadLine());
 
-                                                DataRow r = food.GetFoodById(FoodId);
+                                                DataRow r = food.GetFoodById(UpdatedFoodId);
 
                                                 //int customerId = customer.GetCustomerId(Uname, Pass);
 
@@ -220,7 +225,7 @@ namespace OFOS.UI
                                                     switch (paymentChoice)
                                                     {
                                                         case 1:
-                                                            if (order.UpdateOrder(UpdateOrderId,FoodId, orderStatus, address, d2, Quantity, TotalAmount ))
+                                                            if (order.UpdateOrder(UpdateOrderId,UpdatedFoodId, orderStatus, address, d2, Quantity, TotalAmount ))
                                                             {
                                                                 Console.WriteLine("Order Updated Successfully");
                                                             }
@@ -237,7 +242,7 @@ namespace OFOS.UI
                                                             string transactionStatus = "Successfull";
                                                             if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
                                                             {
-                                                                if (order.UpdateOrder(UpdateOrderId, FoodId, orderStatus, address, d2, Quantity, TotalAmount))
+                                                                if (order.UpdateOrder(UpdateOrderId, UpdatedFoodId, orderStatus, address, d2, Quantity, TotalAmount))
                                                                 {
                                                                     Console.WriteLine("Order Updated Successfully");
                                                                 }
