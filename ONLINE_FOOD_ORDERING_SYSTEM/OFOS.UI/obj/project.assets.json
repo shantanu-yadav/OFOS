@@ -493,11 +493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.csproj",
+      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.csproj",
       "projectName": "OFOS.UI",
-      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.csproj",
+      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.csproj",
       "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
+      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -514,8 +514,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
+            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
             }
           }
         }

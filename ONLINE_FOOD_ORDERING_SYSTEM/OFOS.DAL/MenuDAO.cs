@@ -56,6 +56,32 @@ namespace OFOS.DAL
             }
         }
 
+        public bool ModifyFoodStock(int FoodId, string Stock)
+        {
+            try
+            {
+                Qry = "update Menu set Stock=@Stock where FoodId = @FoodId";
+                cmd = new SqlCommand(Qry, con);
+                cmd.Parameters.AddWithValue("@FoodId", FoodId);
+                cmd.Parameters.AddWithValue("@Stock", Stock);
+                con.Open();
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return false;
+        }
+
 
         public DataRow GetFoodById(int Food_Id)
         {

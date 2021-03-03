@@ -64,9 +64,9 @@ namespace OFOS.DAL
         {
             try
             {
-                Qry = "Select * from OrderDetails where OrderId=" + Order_Id;
+                Qry = "Select * from OrderDetails where OderId=" + Order_Id;
                 da = new SqlDataAdapter(Qry, con);
-                dt = new DataTable("OrdersOrderDetails");
+                dt = new DataTable("OrderDetails");
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                     return dt.Rows[0];
@@ -104,8 +104,41 @@ namespace OFOS.DAL
                 cmd.Parameters.AddWithValue("@OderID", OrderId);
                 cmd.Parameters.AddWithValue("@Orderstatus", orderStatus);
                 con.Open();
-                cmd.ExecuteNonQuery();
-                return true;
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return false;
+        }
+
+        public bool UpdateOrder(int OderId, int FoodId, string orderStatus, string shippingAddress, DateTime expectedTimeofDelivery,int quantity,decimal totalAmount)
+        {
+            try
+            {
+                Qry = "update OrderDetails set FoodId=@FoodId,Orderstatus=@orderStatus,ShippingAddress=@shippingAddress,ExpectedTimeOfDelivery=@expectedTimeofDelivery,Quantity=@quantity,TotalAmount=@totalAmount where OderID = OderID";
+                cmd = new SqlCommand(Qry, con);
+                cmd.Parameters.AddWithValue("@FoodId", FoodId);
+                cmd.Parameters.AddWithValue("@OrderStatus", orderStatus);
+                cmd.Parameters.AddWithValue("@ShippingAddress", shippingAddress);
+                cmd.Parameters.AddWithValue("@ExpectedTimeOfDelivery", expectedTimeofDelivery);
+                cmd.Parameters.AddWithValue("@Quantity", quantity);
+                cmd.Parameters.AddWithValue("@TotalAmount", totalAmount);
+                con.Open();
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                    return true;
+                else
+                    return false;
             }
             catch (Exception ex)
             {

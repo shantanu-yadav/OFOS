@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
+      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
       "projectName": "OFOS.Model",
-      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
+      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
       "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\obj\\",
+      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",

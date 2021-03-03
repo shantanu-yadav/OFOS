@@ -63,7 +63,9 @@ namespace OFOS.UI
                                     Console.WriteLine("1.Show Menu");
                                     Console.WriteLine("2.Place Order");
                                     Console.WriteLine("3.View Orders");
-                                    Console.WriteLine("4.Exit");
+                                    Console.WriteLine("4.Track Order");
+                                    Console.WriteLine("5.Update Order");
+                                    Console.WriteLine("6.Logout");
                                     Console.WriteLine("Enter Option");
                                     int ch = int.Parse(Console.ReadLine());
                                     OrderDAO order = new OrderDAO();
@@ -106,19 +108,32 @@ namespace OFOS.UI
                                                 {
                                                     Console.WriteLine("Enter Customer Name");
                                                     string name = Console.ReadLine();
-                                                    Console.WriteLine("Enter Card Number");
-                                                    string CardNumber = Console.ReadLine();
-                                                    Console.WriteLine("Enter Phone Number");
-                                                    string phoneNumber = Console.ReadLine();
-                                                    string transactionStatus = "Successfull";
-                                                    if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
-                                                    {
-                                                        if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
-                                                        {
-                                                            Console.WriteLine("Order Placed");
-                                                        }
-                                                    }
+                                                    Console.WriteLine("Choose Payment Option : \n1.COD \n2.Online Payment");
+                                                    int paymentChoice = int.Parse(Console.ReadLine());
 
+                                                    switch (paymentChoice)
+                                                    {
+                                                        case 1:
+                                                            if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
+                                                            {
+                                                                Console.WriteLine("Order Placed");
+                                                            }
+                                                            break;
+                                                        case 2:
+                                                            Console.WriteLine("Enter Card Number");
+                                                            string CardNumber = Console.ReadLine();
+                                                            Console.WriteLine("Enter Phone Number");
+                                                            string phoneNumber = Console.ReadLine();
+                                                            string transactionStatus = "Successfull";
+                                                            if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
+                                                            {
+                                                                if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
+                                                                {
+                                                                    Console.WriteLine("Order Placed");
+                                                                }
+                                                            }
+                                                            break;
+                                                    }
                                                 }
                                                 catch (Exception ex)
                                                 {
@@ -160,6 +175,87 @@ namespace OFOS.UI
                                             }
                                             break;
                                         case 4:
+                                            Console.WriteLine("Enter Order Id");
+                                            int OrderId = int.Parse(Console.ReadLine());
+                                            DataRow dr = order.GetOrderById(OrderId);
+                                            if (dr != null)
+                                            {
+                                                Console.WriteLine($"Order Status : {dr["Orderstatus"]}");
+
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("Order not found!");
+                                            }
+                                            break;
+                                        case 5:
+                                            {
+                                                Console.WriteLine("Enter Order ID:");
+                                                int UpdateOrderId = int.Parse(Console.ReadLine());
+                                                Console.WriteLine("Enter New Food Id");
+                                                int FoodId = int.Parse(Console.ReadLine());
+                                                Console.WriteLine("Enter Quantity");
+                                                int Quantity = int.Parse(Console.ReadLine());
+
+                                                DataRow r = food.GetFoodById(FoodId);
+
+                                                //int customerId = customer.GetCustomerId(Uname, Pass);
+
+
+
+                                                decimal TotalAmount = (decimal)r["price"] * Quantity;
+                                                Console.WriteLine("Enter Updated Shipping Address");
+                                                string address = Console.ReadLine();
+                                                string orderStatus = "Processing";
+                                                DateTime d = DateTime.Now;
+                                                DateTime d2 = d.AddHours(1.0);
+
+                                                try
+                                                {
+                                                    Console.WriteLine("Enter Customer Name");
+                                                    string name = Console.ReadLine();
+                                                    Console.WriteLine("Choose Payment Option : \n1.COD \n2.Online Payment");
+                                                    int paymentChoice = int.Parse(Console.ReadLine());
+
+                                                    switch (paymentChoice)
+                                                    {
+                                                        case 1:
+                                                            if (order.UpdateOrder(UpdateOrderId,FoodId, orderStatus, address, d2, Quantity, TotalAmount ))
+                                                            {
+                                                                Console.WriteLine("Order Updated Successfully");
+                                                            }
+                                                            else
+                                                            {
+                                                                Console.WriteLine("Order Update Failed!!");
+                                                            }
+                                                            break;
+                                                        case 2:
+                                                            Console.WriteLine("Enter Card Number");
+                                                            string CardNumber = Console.ReadLine();
+                                                            Console.WriteLine("Enter Phone Number");
+                                                            string phoneNumber = Console.ReadLine();
+                                                            string transactionStatus = "Successfull";
+                                                            if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
+                                                            {
+                                                                if (order.UpdateOrder(UpdateOrderId, FoodId, orderStatus, address, d2, Quantity, TotalAmount))
+                                                                {
+                                                                    Console.WriteLine("Order Updated Successfully");
+                                                                }
+                                                                else
+                                                                {
+                                                                    Console.WriteLine("Order Update Failed!!");
+                                                                }
+                                                            }
+                                                            break;
+                                                    }
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    Console.WriteLine(ex.Message);
+                                                }
+                                            }
+                                            break;
+                                        default:
                                             exitchoice = false;
                                             break;
                                     }
