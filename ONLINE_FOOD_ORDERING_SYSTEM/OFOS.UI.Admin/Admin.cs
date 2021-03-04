@@ -32,6 +32,8 @@ namespace OFOS.UI
                         Console.WriteLine("2.Show Order Details");
                         Console.WriteLine("3.Modify Order Details");
                         Console.WriteLine("4.Modify Food Stock");
+                        Console.WriteLine("5.Logout");
+                        Console.WriteLine("6.Exit");
                         Console.WriteLine("Enter Option");
                         int ch = int.Parse(Console.ReadLine());
                         MenuDAO food = new MenuDAO();
@@ -147,8 +149,15 @@ namespace OFOS.UI
                                     Console.WriteLine("Stock Update Unsuccessfull!");
                                 }
                                 break;
-                            default:
+                            case 5:
                                 exit = false;
+                                break;
+                            case 6:
+                                exit = false;
+                                logout = false;
+                                break;
+                            default:
+                                Console.WriteLine("Enter Proper option");
                                 break;
                         }
                     } while (exit);
@@ -156,7 +165,6 @@ namespace OFOS.UI
                 }
                 else
                     Console.WriteLine("Incorrect UserName or Password!");
-                Console.ReadKey();
             } while (logout);
         }
 
