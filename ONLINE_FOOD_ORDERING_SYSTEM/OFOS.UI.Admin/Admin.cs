@@ -31,7 +31,7 @@ namespace OFOS.UI
                         Console.WriteLine("1.Add Food Items");
                         Console.WriteLine("2.Show Order Details");
                         Console.WriteLine("3.Modify Order Details");
-                        //Console.WriteLine("4.Modify Food Stock");
+                        Console.WriteLine("4.Modify Food Stock");
                         Console.WriteLine("Enter Option");
                         int ch = int.Parse(Console.ReadLine());
                         MenuDAO food = new MenuDAO();
@@ -119,34 +119,34 @@ namespace OFOS.UI
                                 }
                                 
                                 break;
-                            //case 4:
-                            //    Console.WriteLine("Enter Food ID");
-                            //    int FoodId = int.Parse(Console.ReadLine());
-                            //    Console.WriteLine("1. Change Stock to Available");
-                            //    Console.WriteLine("2. Change Status to Not Available");
-                            //    int choice = int.Parse(Console.ReadLine());
-                            //    String Stock = null;
-                            //    switch (choice)
-                            //    {
-                            //        case 1:
-                            //            Stock = "Available";
-                            //            break;
-                            //        case 2:
-                            //            Stock = "Not Available";
-                            //            break;
-                            //        default:
-                            //            Console.WriteLine("Enter The correct Choice");
-                            //            break;
-                            //    }
-                            //    if (order.ModifyOrder(FoodId, Stock))
-                            //    {
-                            //        Console.WriteLine("Stock Updated");
-                            //    }
-                            //    else
-                            //    {
-                            //        Console.WriteLine("Stock Update Unsuccessfull!");
-                            //    }
-                            //    break;
+                            case 4:
+                                Console.WriteLine("Enter Food ID");
+                                int FoodId = int.Parse(Console.ReadLine());
+                                Console.WriteLine("1. Change Stock to Available");
+                                Console.WriteLine("2. Change Status to Not Available");
+                                int choice = int.Parse(Console.ReadLine());
+                                String Stock = null;
+                                switch (choice)
+                                {
+                                    case 1:
+                                        Stock = "Available";
+                                        break;
+                                    case 2:
+                                        Stock = "Not Available";
+                                        break;
+                                    default:
+                                        Console.WriteLine("Enter The correct Choice");
+                                        break;
+                                }
+                                if (food.ModifyFoodStock(FoodId, Stock))
+                                {
+                                    Console.WriteLine("Stock Updated");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Stock Update Unsuccessfull!");
+                                }
+                                break;
                             default:
                                 exit = false;
                                 break;

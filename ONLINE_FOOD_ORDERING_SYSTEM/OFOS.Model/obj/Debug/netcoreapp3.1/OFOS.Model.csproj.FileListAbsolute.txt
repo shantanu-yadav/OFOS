@@ -16,3 +16,12 @@ C:\MYDRIVE\MYSPACE\CAPGEMINI_Training_Folder\OFOS\OFOS\ONLINE_FOOD_ORDERING_SYST
 C:\MYDRIVE\MYSPACE\CAPGEMINI_Training_Folder\OFOS\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csproj.CoreCompileInputs.cache
 C:\MYDRIVE\MYSPACE\CAPGEMINI_Training_Folder\OFOS\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.dll
 C:\MYDRIVE\MYSPACE\CAPGEMINI_Training_Folder\OFOS\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.pdb
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.deps.json
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.dll
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.pdb
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csprojAssemblyReference.cache
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.AssemblyInfoInputs.cache
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.AssemblyInfo.cs
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.dll
+C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.pdb

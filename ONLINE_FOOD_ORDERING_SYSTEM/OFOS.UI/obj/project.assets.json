@@ -145,16 +145,6 @@
           "bin/placeholder/OFOS.DAL.dll": {}
         }
       },
-      "OFOS.ExceptionLogs/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/OFOS.ExceptionLogs.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OFOS.ExceptionLogs.dll": {}
-        }
-      },
       "OFOS.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -486,11 +476,6 @@
       "path": "../OFOS.DAL/OFOS.DAL.csproj",
       "msbuildProject": "../OFOS.DAL/OFOS.DAL.csproj"
     },
-    "OFOS.ExceptionLogs/1.0.0": {
-      "type": "project",
-      "path": "../OFOS.ExceptionLogs/OFOS.ExceptionLogs.csproj",
-      "msbuildProject": "../OFOS.ExceptionLogs/OFOS.ExceptionLogs.csproj"
-    },
     "OFOS.Model/1.0.0": {
       "type": "project",
       "path": "../OFOS.Model/OFOS.Model.csproj",
@@ -499,25 +484,29 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "OFOS.DAL >= 1.0.0",
-      "OFOS.ExceptionLogs >= 1.0.0"
+      "OFOS.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shant\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
       "projectName": "OFOS.UI.Customer",
-      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
-      "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -530,11 +519,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
-            },
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
+            "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
             }
           }
         }
@@ -563,7 +549,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
