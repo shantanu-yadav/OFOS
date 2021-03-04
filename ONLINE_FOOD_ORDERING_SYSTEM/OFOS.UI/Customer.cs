@@ -16,7 +16,7 @@ namespace OFOS.UI
             do
             {
                 Console.WriteLine("**********************************************Customer Console***********************************************");
-                Console.WriteLine("1.New User(Register)\n2.Login");
+                Console.WriteLine("1.New User(Register)\n2.Login\n3.Exit");
                 int choice = int.Parse(Console.ReadLine());
                 CustomerDAO customer = new CustomerDAO();
                 ExceptionLogging e = new ExceptionLogging();
@@ -286,16 +286,15 @@ namespace OFOS.UI
                             Console.WriteLine("Something went wrong please check logs!!");
                         }
                         break;
-                    default:
+                    case 3:
                         exit = false;
+                        break;
+                    default:
+                        Console.WriteLine("Enter Proper Option");
                         break;
 
                 }
             } while (exit);
-
-
-
-            Console.ReadKey();
         }
     }
 }
