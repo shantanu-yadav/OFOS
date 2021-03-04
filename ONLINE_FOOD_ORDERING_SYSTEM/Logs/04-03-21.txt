@@ -1,0 +1,27 @@
+-----------Exception Details on  04-03-2021 09:49:17-----------------
+-------------------------------------------------------------------------------------
+
+
+Log Written Date: 04-03-2021 09:49:17
+Error Line No : line 55
+Error Message: SqlException
+Exception Type: System.Data.SqlClient.SqlException
+Error Location : Column name or number of supplied values does not match table definition.
+
+--------------------------------*End*------------------------------------------
+
+
+-----------Exception Details on  04-03-2021 09:52:09-----------------
+-------------------------------------------------------------------------------------
+
+
+Log Written Date: 04-03-2021 09:52:09
+Error Line No : line 55
+Error Message: SqlException
+Exception Type: System.Data.SqlClient.SqlException
+Error Location : The INSERT statement conflicted with the CHECK constraint "CK__Menu__Stock__300424B4". The conflict occurred in database "OFOS", table "dbo.Menu", column 'Stock'.
+The statement has been terminated.
+
+--------------------------------*End*------------------------------------------
+
+

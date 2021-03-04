@@ -59,3 +59,11 @@ create table Customer
 )
 
 
+
+Select * from Menu
+Select * from Customer
+select * from OrderDetails
+
+
+
+

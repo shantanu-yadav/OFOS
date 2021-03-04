@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "OFOS.UI.Admin/1.0.0": {
         "dependencies": {
-          "OFOS.DAL": "1.0.0"
+          "OFOS.DAL": "1.0.0",
+          "OFOS.ExceptionLogs": "1.0.0"
         },
         "runtime": {
           "OFOS.UI.Admin.dll": {}
@@ -98,6 +99,11 @@
           "OFOS.DAL.dll": {}
         }
       },
+      "OFOS.ExceptionLogs/1.0.0": {
+        "runtime": {
+          "OFOS.ExceptionLogs.dll": {}
+        }
+      },
       "OFOS.Model/1.0.0": {
         "runtime": {
           "OFOS.Model.dll": {}
@@ -175,6 +181,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "OFOS.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OFOS.ExceptionLogs/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

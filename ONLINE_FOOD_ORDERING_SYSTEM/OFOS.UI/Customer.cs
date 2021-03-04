@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using OFOS.DAL;
 using OFOS.Model;
+using OFOS.ExceptionLogs;
 
 namespace OFOS.UI
 {
@@ -18,6 +19,7 @@ namespace OFOS.UI
                 Console.WriteLine("1.New User(Register)\n2.Login");
                 int choice = int.Parse(Console.ReadLine());
                 CustomerDAO customer = new CustomerDAO();
+                ExceptionLogging e = new ExceptionLogging();
 
 
                 switch (choice)
@@ -40,7 +42,8 @@ namespace OFOS.UI
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine(ex.Message);
+                            e.LogInFile(ex);
+                            Console.WriteLine("Something went wrong please check logs!!");
                         }
 
 
@@ -138,7 +141,8 @@ namespace OFOS.UI
                                                 }
                                                 catch (Exception ex)
                                                 {
-                                                    Console.WriteLine(ex.Message);
+                                                    e.LogInFile(ex);
+                                                    Console.WriteLine("Something went wrong please check logs!!");
                                                 }
                                             }
                                             break;
@@ -153,28 +157,30 @@ namespace OFOS.UI
                                                     {
                                                         DataTable dt = order.GetOrderByCustomerId(customerId);
 
-                                                        Console.WriteLine(dt);
                                                         
-                                                            foreach (DataRow or in dt.Rows)
+                                                            if(dt.Rows.Count > 0)
                                                             {
-                                                                int foodId = (int)or["FoodID"];
-                                                                DataRow r = food.GetFoodById(foodId);
+                                                                foreach (DataRow or in dt.Rows)
+                                                                {
+                                                                    int foodId = (int)or["FoodID"];
+                                                                    DataRow r = food.GetFoodById(foodId);
 
-                                                                Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
+                                                                    Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
 
+                                                                }
                                                             }
-                                                        
-                                                        
+                                                            else
+                                                            {
+                                                            Console.WriteLine("No Orders found!!");
+                                                            }
                                                     }
-                                                    else
-                                                    {
-                                                        Console.WriteLine("No Orders found");
-                                                    }
+                                                    
                                                     
                                                 }
                                                 catch (Exception ex)
                                                 {
-                                                    Console.WriteLine(ex.Message);
+                                                    e.LogInFile(ex);
+                                                    Console.WriteLine("Something went wrong please check logs!!");
                                                 }
 
                                             }
@@ -204,7 +210,7 @@ namespace OFOS.UI
 
                                                 DataRow r = food.GetFoodById(UpdatedFoodId);
 
-                                                //int customerId = customer.GetCustomerId(Uname, Pass);
+                                                int customerId = customer.GetCustomerId(Uname, Pass);
 
 
 
@@ -256,7 +262,8 @@ namespace OFOS.UI
                                                 }
                                                 catch (Exception ex)
                                                 {
-                                                    Console.WriteLine(ex.Message);
+                                                    e.LogInFile(ex);
+                                                    Console.WriteLine("Something went wrong please check logs!!");
                                                 }
                                             }
                                             break;
@@ -275,7 +282,8 @@ namespace OFOS.UI
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine(ex.Message);
+                            e.LogInFile(ex);
+                            Console.WriteLine("Something went wrong please check logs!!");
                         }
                         break;
                     default:

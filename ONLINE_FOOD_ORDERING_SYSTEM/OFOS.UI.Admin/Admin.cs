@@ -4,6 +4,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using OFOS.DAL;
+using OFOS.ExceptionLogs;
 
 namespace OFOS.UI
 {
@@ -15,6 +16,7 @@ namespace OFOS.UI
             do
             {
                 AdminLoginDOA login = new AdminLoginDOA();
+                ExceptionLogging e = new ExceptionLogging();
                 Console.WriteLine("**********************************************Admin Console***********************************************");
                 Console.WriteLine("Enter the User Name");
                 string username = Console.ReadLine();
@@ -57,17 +59,27 @@ namespace OFOS.UI
                                         }
                                     }
                                     catch (Exception ex)
-                                    {
-                                        Console.WriteLine(ex.Message);
+                                    { 
+                                        e.LogInFile(ex);
+                                        Console.WriteLine("Something went wrong please check logs!!");
                                     }
                                 }
                                 break;
                             case 2:
-                                DataTable dt = order.GetOrders();
-                                foreach (DataRow r in dt.Rows)
+                                try
                                 {
-                                    Console.WriteLine($"OrderID:{r["OderID"]} FoodID:{r["FoodID"]} Order Status: {r["Orderstatus"]} Shipping Address: {r["ShippingAddress"]} ETD: {r["ExpectedTimeOfDelivery"]}  ");
+                                    DataTable dt = order.GetOrders();
+                                    foreach (DataRow r in dt.Rows)
+                                    {
+                                        Console.WriteLine($"OrderID:{r["OderID"]} FoodID:{r["FoodID"]} Order Status: {r["Orderstatus"]} Shipping Address: {r["ShippingAddress"]} ETD: {r["ExpectedTimeOfDelivery"]}  ");
+                                    }
                                 }
+                                catch(Exception ex)
+                                {
+                                    e.LogInFile(ex);
+                                    Console.WriteLine("Something went wrong please check logs!!");
+                                }
+                                
                                 break;
                             case 3:
 
@@ -89,14 +101,23 @@ namespace OFOS.UI
                                         Console.WriteLine("Enter The correct Choice");
                                         break;
                                 }
-                                if (order.ModifyOrder(OrderId, orderstatus))
+                                try
                                 {
-                                    Console.WriteLine("Order Updated");
+                                    if (order.ModifyOrder(OrderId, orderstatus))
+                                    {
+                                        Console.WriteLine("Order Updated");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Order Update Unsuccessfull!");
+                                    }
                                 }
-                                else
+                                catch(Exception ex)
                                 {
-                                    Console.WriteLine("Order Update Unsuccessfull!");
+                                    e.LogInFile(ex);
+                                    Console.WriteLine("Something went wrong please check logs!!");
                                 }
+                                
                                 break;
                             //case 4:
                             //    Console.WriteLine("Enter Food ID");

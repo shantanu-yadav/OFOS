@@ -145,6 +145,16 @@
           "bin/placeholder/OFOS.DAL.dll": {}
         }
       },
+      "OFOS.ExceptionLogs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/OFOS.ExceptionLogs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OFOS.ExceptionLogs.dll": {}
+        }
+      },
       "OFOS.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -476,6 +486,11 @@
       "path": "../OFOS.DAL/OFOS.DAL.csproj",
       "msbuildProject": "../OFOS.DAL/OFOS.DAL.csproj"
     },
+    "OFOS.ExceptionLogs/1.0.0": {
+      "type": "project",
+      "path": "../OFOS.ExceptionLogs/OFOS.ExceptionLogs.csproj",
+      "msbuildProject": "../OFOS.ExceptionLogs/OFOS.ExceptionLogs.csproj"
+    },
     "OFOS.Model/1.0.0": {
       "type": "project",
       "path": "../OFOS.Model/OFOS.Model.csproj",
@@ -484,7 +499,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "OFOS.DAL >= 1.0.0"
+      "OFOS.DAL >= 1.0.0",
+      "OFOS.ExceptionLogs >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -516,6 +532,9 @@
           "projectReferences": {
             "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
               "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
+            },
+            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\OFOS\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
             }
           }
         }
