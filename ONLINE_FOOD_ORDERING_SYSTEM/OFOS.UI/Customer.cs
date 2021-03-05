@@ -6,16 +6,19 @@ using System.Data.SqlClient;
 using OFOS.DAL;
 using OFOS.Model;
 using OFOS.ExceptionLogs;
+using System.Text.RegularExpressions;
+using CustomExceptions;
 
 namespace OFOS.UI
 {
-    class Customer
+    public class Customer
     {
         static void Main(string[] args)
-        { bool exit = true;
+        {
+            bool exit = true;
             do
             {
-                Console.WriteLine("***********************************************Customers Console***********************************************");
+
                 Console.WriteLine("1.New User(Register)\n2.Login\n3.Exit");
                 int choice = int.Parse(Console.ReadLine());
                 CustomerDAO customer = new CustomerDAO();
@@ -42,8 +45,15 @@ namespace OFOS.UI
                         }
                         catch (Exception ex)
                         {
-                            e.LogInFile(ex);
-                            Console.WriteLine("Something went wrong please check logs!!");
+                            if (ex.Message.ToString().Contains("duplicate key"))
+                            {
+                                Console.WriteLine("User already exists!!");
+                            }
+                            else
+                            {
+                                e.LogInFile(ex);
+                                Console.WriteLine("Something went wrong please check logs!!");
+                            }
                         }
 
 
@@ -81,68 +91,100 @@ namespace OFOS.UI
                                         case 1:
                                             {
                                                 DataTable df = food.GetMenu();
-                                                foreach (DataRow r in df.Rows)
+                                                if (df.Rows.Count > 0)
                                                 {
-                                                    Console.WriteLine($"FoodId:{r["FoodID"]} FoodName:{r["FoodName"]} FoodCategory:{r["FoodCategory"]} price:{r["price"]} stock:{r["stock"]}");
+                                                    foreach (DataRow r in df.Rows)
+                                                    {
+                                                        Console.WriteLine($"FoodId:{r["FoodID"]} FoodName:{r["FoodName"]} FoodCategory:{r["FoodCategory"]} price:{r["price"]} stock:{r["stock"]}");
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("Menu Not Available!!");
                                                 }
 
                                             }
                                             break;
                                         case 2:
                                             {
-                                                Console.WriteLine("Enter Food Id");
-                                                int FoodId = int.Parse(Console.ReadLine());
-                                                Console.WriteLine("Enter Quantity");
-                                                int Quantity = int.Parse(Console.ReadLine());
-
-                                                DataRow r = food.GetFoodById(FoodId);
-
-                                                int customerId = customer.GetCustomerId(Uname, Pass);
-
-
-
-                                                decimal TotalAmount = (decimal)r["price"] * Quantity;
-                                                Console.WriteLine("Enter Shipping Address");
-                                                string address = Console.ReadLine();
-                                                string orderStatus = "Processing";
-                                                DateTime d = DateTime.Now;
-                                                DateTime d2 = d.AddHours(1.0);
-
                                                 try
                                                 {
-                                                    Console.WriteLine("Enter Customer Name");
-                                                    string name = Console.ReadLine();
-                                                    Console.WriteLine("Choose Payment Option : \n1.COD \n2.Online Payment");
-                                                    int paymentChoice = int.Parse(Console.ReadLine());
 
-                                                    switch (paymentChoice)
+                                                    Console.WriteLine("Enter Food Id");
+                                                    int FoodId = int.Parse(Console.ReadLine());
+                                                    Console.WriteLine("Enter Quantity");
+                                                    int Quantity = int.Parse(Console.ReadLine());
+                                                    DataRow r = food.GetFoodById(FoodId);
+                                                    decimal TotalAmount = 0;
+
+
+                                                    if (r == null)
+                                                        throw new Exception("Invalid Order ID");
+                                                    else
                                                     {
-                                                        case 1:
-                                                            if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
-                                                            {
-                                                                Console.WriteLine("Order Placed");
-                                                            }
-                                                            break;
-                                                        case 2:
-                                                            Console.WriteLine("Enter Card Number");
-                                                            string CardNumber = Console.ReadLine();
-                                                            Console.WriteLine("Enter Phone Number");
-                                                            string phoneNumber = Console.ReadLine();
-                                                            string transactionStatus = "Successfull";
-                                                            if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
-                                                            {
+                                                        TotalAmount = (decimal)r["price"] * Quantity;
+                                                        Console.WriteLine("Enter Shipping Address");
+                                                        string address = Console.ReadLine();
+                                                        string orderStatus = "Processing";
+                                                        DateTime d = DateTime.Now;
+                                                        DateTime d2 = d.AddHours(1.0);
+
+                                                        Console.WriteLine("Enter Customer Name");
+                                                        string name = Console.ReadLine();
+                                                        Console.WriteLine("Choose Payment Option : \n1.COD \n2.Online Payment");
+                                                        int paymentChoice = int.Parse(Console.ReadLine());
+                                                        int customerId = customer.GetCustomerId(Uname, Pass);
+                                                        switch (paymentChoice)
+                                                        {
+                                                            case 1:
                                                                 if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
                                                                 {
                                                                     Console.WriteLine("Order Placed");
                                                                 }
-                                                            }
-                                                            break;
+                                                                break;
+                                                            case 2:
+                                                                Console.WriteLine("Enter Card Number");
+                                                                string CardNumber = Console.ReadLine();
+                                                                Console.WriteLine("Enter Phone Number");
+                                                                string phoneNumber = Console.ReadLine();
+
+                                                                try
+                                                                {
+                                                                    if (!Regex.IsMatch(CardNumber, @"^-?\d+$"))
+                                                                        throw new InvalidCardNumberExceptions();
+                                                                    if (!Regex.IsMatch(phoneNumber, @"^-?\d+$"))
+                                                                        throw new InvalidPhoneNumberExceptions();
+
+
+                                                                    string transactionStatus = "Successfull";
+                                                                    if (payment.AddPaymentDetails(new Model.PaymentDetails() { Customer_Name = name, Customer_Card_Number = CardNumber, Total_Amount = TotalAmount, Customer_Phone_Number = phoneNumber, Transaction_Status = transactionStatus }))
+                                                                    {
+                                                                        if (order.CreateOrder(new Model.OrderDetails() { Food_Id = FoodId, CustomerId = customerId, Order_Status = orderStatus, Shipping_Address = address, Expected_Time_of_Delivery = d2, quantity = Quantity, Total_Amount = TotalAmount }))
+                                                                        {
+                                                                            Console.WriteLine("Order Placed");
+                                                                        }
+                                                                    }
+                                                                }
+                                                                catch (Exception ex)
+                                                                {
+                                                                    Console.WriteLine(ex.Message);
+                                                                }
+                                                                break;
+                                                        }
                                                     }
                                                 }
                                                 catch (Exception ex)
                                                 {
-                                                    e.LogInFile(ex);
-                                                    Console.WriteLine("Something went wrong please check logs!!");
+                                                    if (ex.Message == "Invalid Order ID")
+                                                    {
+                                                        Console.WriteLine("Invalid Order ID");
+                                                    }
+                                                    else
+                                                    {
+                                                        e.LogInFile(ex);
+                                                        Console.WriteLine("Something went wrong please check logs!!");
+                                                    }
+
                                                 }
                                             }
                                             break;
@@ -153,29 +195,29 @@ namespace OFOS.UI
                                                     int customerId = customer.GetCustomerId(Uname, Pass);
 
 
-                                                    if(customerId != 0)
+                                                    if (customerId != 0)
                                                     {
                                                         DataTable dt = order.GetOrderByCustomerId(customerId);
 
-                                                        
-                                                            if(dt.Rows.Count > 0)
+
+                                                        if (dt.Rows.Count > 0)
+                                                        {
+                                                            foreach (DataRow or in dt.Rows)
                                                             {
-                                                                foreach (DataRow or in dt.Rows)
-                                                                {
-                                                                    int foodId = (int)or["FoodID"];
-                                                                    DataRow r = food.GetFoodById(foodId);
+                                                                int foodId = (int)or["FoodID"];
+                                                                DataRow r = food.GetFoodById(foodId);
 
-                                                                    Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
+                                                                Console.WriteLine($"OrderId : {or["OderID"]} FoodItem : {r["FoodName"]}  Quantity : {or["Quantity"]} TotalAmount : {or["TotalAmount"]} Expected Time of Delivery : {or["ExpectedTimeOfDelivery"]}");
 
-                                                                }
                                                             }
-                                                            else
-                                                            {
+                                                        }
+                                                        else
+                                                        {
                                                             Console.WriteLine("No Orders found!!");
-                                                            }
+                                                        }
                                                     }
-                                                    
-                                                    
+
+
                                                 }
                                                 catch (Exception ex)
                                                 {
@@ -231,7 +273,7 @@ namespace OFOS.UI
                                                     switch (paymentChoice)
                                                     {
                                                         case 1:
-                                                            if (order.UpdateOrder(UpdateOrderId,UpdatedFoodId, orderStatus, address, d2, Quantity, TotalAmount ))
+                                                            if (order.UpdateOrder(UpdateOrderId, UpdatedFoodId, orderStatus, address, d2, Quantity, TotalAmount))
                                                             {
                                                                 Console.WriteLine("Order Updated Successfully");
                                                             }
@@ -277,13 +319,15 @@ namespace OFOS.UI
                             }
                             else
                             {
-                                Console.WriteLine("Invalid Credentials!");
+                                Console.WriteLine("User does not exists or Invalid Credentials!");
                             }
                         }
                         catch (Exception ex)
                         {
+
                             e.LogInFile(ex);
                             Console.WriteLine("Something went wrong please check logs!!");
+
                         }
                         break;
                     case 3:
@@ -298,3 +342,4 @@ namespace OFOS.UI
         }
     }
 }
+

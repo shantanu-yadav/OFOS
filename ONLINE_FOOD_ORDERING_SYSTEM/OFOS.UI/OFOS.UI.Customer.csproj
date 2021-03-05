@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OFOS.CustomException\OFOS.CustomException.csproj" />
     <ProjectReference Include="..\OFOS.DAL\OFOS.DAL.csproj" />
     <ProjectReference Include="..\OFOS.ExceptionLogs\OFOS.ExceptionLogs.csproj" />
   </ItemGroup>
