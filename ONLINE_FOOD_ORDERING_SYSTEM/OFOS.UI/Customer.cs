@@ -15,7 +15,7 @@ namespace OFOS.UI
         { bool exit = true;
             do
             {
-                Console.WriteLine("***********************************************Customer Console***********************************************");
+                Console.WriteLine("***********************************************Customers Console***********************************************");
                 Console.WriteLine("1.New User(Register)\n2.Login\n3.Exit");
                 int choice = int.Parse(Console.ReadLine());
                 CustomerDAO customer = new CustomerDAO();
