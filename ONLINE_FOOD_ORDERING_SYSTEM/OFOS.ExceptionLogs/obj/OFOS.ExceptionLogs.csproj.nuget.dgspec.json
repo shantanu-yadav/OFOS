@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {}
+    "D:\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+    "D:\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "projectUniqueName": "D:\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
         "projectName": "OFOS.ExceptionLogs",
-        "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
+        "projectPath": "D:\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
+        "outputPath": "D:\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

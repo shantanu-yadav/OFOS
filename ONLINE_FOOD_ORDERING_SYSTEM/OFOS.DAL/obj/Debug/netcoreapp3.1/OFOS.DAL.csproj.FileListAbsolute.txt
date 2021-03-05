@@ -58,3 +58,15 @@ C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\n
 C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.csproj.CopyComplete
 C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.dll
 C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.pdb
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\bin\Debug\netcoreapp3.1\OFOS.DAL.deps.json
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\bin\Debug\netcoreapp3.1\OFOS.DAL.dll
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\bin\Debug\netcoreapp3.1\OFOS.DAL.pdb
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\bin\Debug\netcoreapp3.1\OFOS.Model.dll
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\bin\Debug\netcoreapp3.1\OFOS.Model.pdb
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.csprojAssemblyReference.cache
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.AssemblyInfoInputs.cache
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.AssemblyInfo.cs
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.csproj.CoreCompileInputs.cache
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.csproj.CopyComplete
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.dll
+D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.DAL\obj\Debug\netcoreapp3.1\OFOS.DAL.pdb
