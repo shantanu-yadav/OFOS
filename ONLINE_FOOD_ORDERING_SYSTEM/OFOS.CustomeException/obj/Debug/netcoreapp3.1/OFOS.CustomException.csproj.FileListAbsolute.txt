@@ -1,0 +1,9 @@
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.deps.json
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.dll
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.pdb
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.csprojAssemblyReference.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.AssemblyInfoInputs.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.AssemblyInfo.cs
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.csproj.CoreCompileInputs.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.dll
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.pdb

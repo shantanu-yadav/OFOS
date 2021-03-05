@@ -25,3 +25,12 @@ C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug
 C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.dll
 C:\Users\ASUS\Source\Repos\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.pdb
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.deps.json
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.dll
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\bin\Debug\netcoreapp3.1\OFOS.Model.pdb
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csprojAssemblyReference.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.AssemblyInfoInputs.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.AssemblyInfo.cs
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.csproj.CoreCompileInputs.cache
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.dll
+D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.Model\obj\Debug\netcoreapp3.1\OFOS.Model.pdb

@@ -7,13 +7,13 @@ using OFOS.DAL;
 using OFOS.Model;
 using OFOS.ExceptionLogs;
 using System.Text.RegularExpressions;
-using CustomExceptions;
+using OFOS.CustomException;
 
 namespace OFOS.UI
 {
     public class Customer
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             bool exit = true;
             do
@@ -153,7 +153,7 @@ namespace OFOS.UI
                                                                     if (!Regex.IsMatch(CardNumber, @"^-?\d+$"))
                                                                         throw new InvalidCardNumberExceptions();
                                                                     if (!Regex.IsMatch(phoneNumber, @"^-?\d+$"))
-                                                                        throw new InvalidPhoneNumberExceptions();
+                                                                        throw new InavalidPhoneNumberExceptions();
 
 
                                                                     string transactionStatus = "Successfull";

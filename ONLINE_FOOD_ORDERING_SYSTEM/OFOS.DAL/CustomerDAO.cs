@@ -8,7 +8,7 @@ namespace OFOS.DAL
 {
     public class CustomerDAO
     {
-        SqlConnection con = new SqlConnection(@"Data Source=KUSHANTH;Initial Catalog=OFOS1;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KJTRLH21;Initial Catalog=OFOS1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         SqlCommand cmd = null;
         SqlDataAdapter da = null;
         DataSet ds = null;

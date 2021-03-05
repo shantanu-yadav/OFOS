@@ -18,7 +18,7 @@ namespace OFOS.ExceptionLogs
 
             try
             {
-                string filepath = @"D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\Logs";
+                string filepath = @".\";
 
                 if (!Directory.Exists(filepath))
                 {

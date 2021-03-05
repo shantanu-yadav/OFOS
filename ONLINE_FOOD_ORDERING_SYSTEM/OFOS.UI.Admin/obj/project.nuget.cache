@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Os2g6rsgltWWCAqK5q9DDwfT3wW48jpQaNcwB3dQ9aeMvVUJEwM78KbnkaN0Kj1bWvr5ex2STM/6Ep/EBTNNpg==",
+  "dgSpecHash": "5PXiUPtXPbc9jL9WsAzrNgJ/UaVbanu+rrw9Yt1z6aahE9uuxGTSNuCukBy/kW589OifmOVRgwhFvlA/8DzMqQ==",
   "success": true,
-  "projectFilePath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
+  "projectFilePath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shant\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\shant\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

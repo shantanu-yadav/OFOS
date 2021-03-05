@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eYvsjNkZ/QgmPBY5PB+CyFPaIM0FVM5dEzJVQxO59mNTTyOQhmIDuUreIbYRUmKOZR6hNieijoIyotC2kiHzjg==",
+  "dgSpecHash": "92r18gmNXOwFBx6B16XS1yrbKz5mmPGXgl9yfg8v6o1AtsjQJ4eyE+oIw403MdnSl4rpKdyCd8PhEZEGOIdJtg==",
   "success": true,
-  "projectFilePath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+  "projectFilePath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shant\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\shant\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",

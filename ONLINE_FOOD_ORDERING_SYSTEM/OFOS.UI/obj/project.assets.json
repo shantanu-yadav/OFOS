@@ -728,8 +728,8 @@
     },
     "OFOS.CustomException/1.0.0": {
       "type": "project",
-      "path": "../OFOS.CustomException/OFOS.CustomException.csproj",
-      "msbuildProject": "../OFOS.CustomException/OFOS.CustomException.csproj"
+      "path": "../OFOS.CustomeException/OFOS.CustomException.csproj",
+      "msbuildProject": "../OFOS.CustomeException/OFOS.CustomException.csproj"
     },
     "OFOS.DAL/1.0.0": {
       "type": "project",
@@ -752,7 +752,8 @@
       "Microsoft.Extensions.Logging >= 5.0.0",
       "OFOS.CustomException >= 1.0.0",
       "OFOS.DAL >= 1.0.0",
-      "OFOS.ExceptionLogs >= 1.0.0"
+      "OFOS.ExceptionLogs >= 1.0.0",
+      "OFOS.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -761,11 +762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "projectUniqueName": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
       "projectName": "OFOS.UI.Customer",
-      "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
       "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-      "outputPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
+      "outputPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -782,14 +783,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.CustomException\\OFOS.CustomException.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.CustomException\\OFOS.CustomException.csproj"
+            "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.CustomeException\\OFOS.CustomException.csproj": {
+              "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.CustomeException\\OFOS.CustomException.csproj"
             },
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
+            "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+              "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
             },
-            "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
-              "projectPath": "C:\\MYDRIVE\\MYSPACE\\CAPGEMINI_Training_Folder\\NewOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
+            "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+              "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
+            },
+            "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj": {
+              "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj"
             }
           }
         }
