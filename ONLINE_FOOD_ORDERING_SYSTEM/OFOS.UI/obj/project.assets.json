@@ -746,11 +746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
       "projectName": "OFOS.UI.Customer",
-      "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
+      "projectPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\OFOS.UI.Customer.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -771,11 +771,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
+            "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
             },
-            "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
+            "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
             }
           }
         }

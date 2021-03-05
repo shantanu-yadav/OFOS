@@ -17,7 +17,7 @@ namespace OFOS.UI
             {
                 AdminLoginDOA login = new AdminLoginDOA();
                 ExceptionLogging e = new ExceptionLogging();
-                Console.WriteLine("**********************************************Admin Console***********************************************");
+
                 Console.WriteLine("Enter the User Name");
                 string username = Console.ReadLine();
                 Console.WriteLine("Enter the Password");
@@ -61,7 +61,7 @@ namespace OFOS.UI
                                         }
                                     }
                                     catch (Exception ex)
-                                    { 
+                                    {
                                         e.LogInFile(ex);
                                         Console.WriteLine("Something went wrong please check logs!!");
                                     }
@@ -76,12 +76,12 @@ namespace OFOS.UI
                                         Console.WriteLine($"OrderID:{r["OderID"]} FoodID:{r["FoodID"]} Order Status: {r["Orderstatus"]} Shipping Address: {r["ShippingAddress"]} ETD: {r["ExpectedTimeOfDelivery"]}  ");
                                     }
                                 }
-                                catch(Exception ex)
+                                catch (Exception ex)
                                 {
                                     e.LogInFile(ex);
                                     Console.WriteLine("Something went wrong please check logs!!");
                                 }
-                                
+
                                 break;
                             case 3:
 
@@ -114,12 +114,12 @@ namespace OFOS.UI
                                         Console.WriteLine("Order Update Unsuccessfull!");
                                     }
                                 }
-                                catch(Exception ex)
+                                catch (Exception ex)
                                 {
                                     e.LogInFile(ex);
                                     Console.WriteLine("Something went wrong please check logs!!");
                                 }
-                                
+
                                 break;
                             case 4:
                                 Console.WriteLine("Enter Food ID");

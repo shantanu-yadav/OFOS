@@ -18,14 +18,14 @@ namespace OFOS.ExceptionLogs
 
             try
             {
-                string filepath = @"C:\MYDRIVE\MYSPACE\CAPGEMINI_Training_Folder\OFOS\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\Logs";  
+                string filepath = @"D:\OFOS\ONLINE_FOOD_ORDERING_SYSTEM\Logs";
 
                 if (!Directory.Exists(filepath))
                 {
                     Directory.CreateDirectory(filepath);
 
                 }
-                filepath = filepath +@"\"+ DateTime.Today.ToString("dd-MM-yy") + ".txt";   
+                filepath = filepath + @"\" + DateTime.Today.ToString("dd-MM-yy") + ".txt";
                 if (!File.Exists(filepath))
                 {
 
@@ -36,11 +36,10 @@ namespace OFOS.ExceptionLogs
                 using (StreamWriter sw = File.AppendText(filepath))
                 {
                     string error = "Log Written Date:" + " " + DateTime.Now.ToString() + "\n" + "Error Line No :" + " " + ErrorlineNo + "\n" + "Error Message:" + " " + Errormsg + "\n" + "Exception Type:" + " " + extype + "\n" + "Error Location :" + " " + ErrorLocation + "\n";
-                    sw.WriteLine("-----------Exception Details on " + " " + DateTime.Now.ToString() + "-----------------");
-                    sw.WriteLine("-------------------------------------------------------------------------------------");
+                    sw.WriteLine("Exception Details on " + " " + DateTime.Now.ToString());
                     sw.WriteLine("\n");
                     sw.WriteLine(error);
-                    sw.WriteLine("--------------------------------*End*------------------------------------------");
+                    sw.WriteLine("--------------------------------------------------------------------------");
                     sw.WriteLine("\n");
                     sw.Flush();
                     sw.Close();

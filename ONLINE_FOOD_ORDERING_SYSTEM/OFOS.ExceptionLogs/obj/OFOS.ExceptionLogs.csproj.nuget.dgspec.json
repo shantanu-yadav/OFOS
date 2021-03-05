@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
         "projectName": "OFOS.ExceptionLogs",
-        "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\OFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

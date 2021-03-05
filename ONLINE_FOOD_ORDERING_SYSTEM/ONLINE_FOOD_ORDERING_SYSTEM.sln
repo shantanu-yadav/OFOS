@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFOS.UI.Customer", "OFOS.UI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFOS.UI.Admin", "OFOS.UI.Admin\OFOS.UI.Admin.csproj", "{EAA70223-22DA-4DB3-BBC2-892DD731099F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOS.ExceptionLogs", "OFOS.ExceptionLogs\OFOS.ExceptionLogs.csproj", "{1F48123C-E584-4D56-8E5B-0CE8589269E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFOS.ExceptionLogs", "OFOS.ExceptionLogs\OFOS.ExceptionLogs.csproj", "{1F48123C-E584-4D56-8E5B-0CE8589269E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOS.CustomException", "OFOS.CustomException\OFOS.CustomException.csproj", "{803D9C10-EBA1-4E8A-9354-CFD7FD265F41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1F48123C-E584-4D56-8E5B-0CE8589269E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F48123C-E584-4D56-8E5B-0CE8589269E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F48123C-E584-4D56-8E5B-0CE8589269E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803D9C10-EBA1-4E8A-9354-CFD7FD265F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803D9C10-EBA1-4E8A-9354-CFD7FD265F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803D9C10-EBA1-4E8A-9354-CFD7FD265F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803D9C10-EBA1-4E8A-9354-CFD7FD265F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
