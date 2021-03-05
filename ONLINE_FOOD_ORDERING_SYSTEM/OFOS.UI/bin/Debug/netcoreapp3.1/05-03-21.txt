@@ -1,0 +1,12 @@
+Exception Details on  05-03-2021 02:40:41 PM
+
+
+Log Written Date: 05-03-2021 02:40:41 PM
+Error Line No : ine 200
+Error Message: SqlException
+Exception Type: System.Data.SqlClient.SqlException
+Error Location : Invalid column name 'CustomerId'.
+
+--------------------------------------------------------------------------
+
+

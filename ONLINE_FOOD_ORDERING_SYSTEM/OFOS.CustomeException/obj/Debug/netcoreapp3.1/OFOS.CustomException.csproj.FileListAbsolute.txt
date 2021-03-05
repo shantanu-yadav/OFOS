@@ -7,3 +7,12 @@ D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreap
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.csproj.CoreCompileInputs.cache
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.dll
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.pdb
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.deps.json
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.dll
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\bin\Debug\netcoreapp3.1\OFOS.CustomException.pdb
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.AssemblyInfo.cs
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.dll
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.CustomeException\obj\Debug\netcoreapp3.1\OFOS.CustomException.pdb

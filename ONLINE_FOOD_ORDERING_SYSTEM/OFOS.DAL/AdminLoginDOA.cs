@@ -9,7 +9,7 @@ namespace OFOS.DAL
 
     public class AdminLoginDOA
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KJTRLH21;Initial Catalog=OFOS1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        SqlConnection con = new SqlConnection(@"Data Source=KUSHANTH;Initial Catalog=OFOS1;Integrated Security=True");
         SqlCommand cmd = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -19,10 +19,10 @@ namespace OFOS.DAL
         {
             try
             {
-                Qry = "select count(*) from AdminLogin where Username=@Username AND Pass= @Pass";
-                cmd = new SqlCommand(Qry, con);
+                cmd = new SqlCommand("AdminAuth", con);
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Username", username);
-                cmd.Parameters.AddWithValue("@Pass", password);
+                cmd.Parameters.AddWithValue("@Password", password);
                 con.Open();
                 Int32 temp = Convert.ToInt32(cmd.ExecuteScalar());
                 if (temp == 1)

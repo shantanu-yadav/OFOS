@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj": {}
+    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj": {}
   },
   "projects": {
-    "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj",
         "projectName": "OFOS.DAL",
-        "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj",
-        "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-        "outputPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj": {
-                "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj"
+              "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj"
               }
             }
           }
@@ -64,22 +68,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
         "projectName": "OFOS.ExceptionLogs",
-        "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
-        "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-        "outputPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -118,22 +126,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj": {
+    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
         "projectName": "OFOS.Model",
-        "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
-        "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-        "outputPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\OFOS.Model.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -172,22 +184,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj": {
+    "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
         "projectName": "OFOS.UI.Admin",
-        "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
-        "packagesPath": "C:\\Users\\shant\\.nuget\\packages\\",
-        "outputPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\OFOS.UI.Admin.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.UI.Admin\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\shant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -200,11 +216,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
-                "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
+              "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.DAL\\OFOS.DAL.csproj"
               },
-              "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
-                "projectPath": "D:\\OFOSNew\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
+              "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Documents\\GitOFOS\\ONLINE_FOOD_ORDERING_SYSTEM\\OFOS.ExceptionLogs\\OFOS.ExceptionLogs.csproj"
               }
             }
           }
@@ -233,7 +249,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

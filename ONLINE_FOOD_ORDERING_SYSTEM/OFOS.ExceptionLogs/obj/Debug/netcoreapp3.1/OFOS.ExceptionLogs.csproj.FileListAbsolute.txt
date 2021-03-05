@@ -25,3 +25,12 @@ D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.csproj.CoreCompileInputs.cache
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.dll
 D:\OFOSNew\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.pdb
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\bin\Debug\netcoreapp3.1\OFOS.ExceptionLogs.deps.json
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\bin\Debug\netcoreapp3.1\OFOS.ExceptionLogs.dll
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\bin\Debug\netcoreapp3.1\OFOS.ExceptionLogs.pdb
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.AssemblyInfo.cs
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.dll
+C:\Users\ASUS\Documents\GitOFOS\ONLINE_FOOD_ORDERING_SYSTEM\OFOS.ExceptionLogs\obj\Debug\netcoreapp3.1\OFOS.ExceptionLogs.pdb
