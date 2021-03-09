@@ -31,7 +31,7 @@ namespace OFOS.UI
                         Console.WriteLine("1.Add Food Items");
                         Console.WriteLine("2.Show Order Details");
                         Console.WriteLine("3.Modify Order Details");
-                        Console.WriteLine("4.Modify Food Stock");
+                        Console.WriteLine("4.Modify Food Availability");
                         Console.WriteLine("5.Logout");
                         Console.WriteLine("6.Exit");
                         Console.WriteLine("Enter Option");
@@ -50,7 +50,7 @@ namespace OFOS.UI
                                     FCate = Console.ReadLine();
                                     Console.WriteLine("Enter the Food Price");
                                     price = int.Parse(Console.ReadLine());
-                                    Console.WriteLine("Enter the Food Stock");
+                                    Console.WriteLine("Enter the Food Availability");
                                     stock = Console.ReadLine();
 
                                     try
@@ -124,8 +124,8 @@ namespace OFOS.UI
                             case 4:
                                 Console.WriteLine("Enter Food ID");
                                 int FoodId = int.Parse(Console.ReadLine());
-                                Console.WriteLine("1. Change Stock to Available");
-                                Console.WriteLine("2. Change Status to Not Available");
+                                Console.WriteLine("1. Change Availabilty to Available");
+                                Console.WriteLine("2. Change Availabilty to Not Available");
                                 int choice = int.Parse(Console.ReadLine());
                                 String Stock = null;
                                 switch (choice)
@@ -146,7 +146,7 @@ namespace OFOS.UI
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Stock Update Unsuccessfull!");
+                                    Console.WriteLine("Availabilty Update Unsuccessfull!");
                                 }
                                 break;
                             case 5:
